@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.donmateo.tables.HashTag_HashTag" table="hashtag_hashtag">
+        <meta attribute="class-description">
+            This class contains two hashtags that are defined as similar
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="id1" column="id1" type="int"/>
+        <property name="id2" column="id2" type="int"/>
+    </class>
+</hibernate-mapping>

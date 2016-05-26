@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.donmateo.tables.HashTag_Info" table="hashtag_info">
+        <meta attribute="class-description">
+            This class contains the hashtag detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="id_hashtag" column="id_ht" type="int"/>
+        <property name="id_info" column="id_info" type="int"/>
+    </class>
+</hibernate-mapping>
