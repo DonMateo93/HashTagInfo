@@ -24,19 +24,19 @@ public class CommandModifier {
             if(command_str.length() > 0) {
 
                 command_str = command_str.toLowerCase();
-                if (command_str.equals("all"))
+                if (command_str.equals("-all"))
                     return CommandModifierEnum.ALL;
 
-                else if (command_str.equals("ap"))
+                else if (command_str.equals("-ap"))
                     return CommandModifierEnum.AP;
 
-                else if (command_str.equals("clp"))
+                else if (command_str.equals("-clp"))
                     return CommandModifierEnum.CLP;
 
-                else if (command_str.equals("info"))
+                else if (command_str.equals("-info"))
                     return CommandModifierEnum.INFO;
 
-                else if (command_str.equals("desc"))
+                else if (command_str.equals("-desc"))
                     return CommandModifierEnum.DESC;
 
                 else if (command_str.contains("#"))

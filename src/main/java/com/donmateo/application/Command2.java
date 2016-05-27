@@ -1,5 +1,6 @@
 package com.donmateo.application;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,6 +11,11 @@ public class Command2 {
     private CommandType command_type;
     private List<CommandModifier> modifier_list;
 
+    public Command2(){
+        this.command_type = CommandType.NONE;
+        this.modifier_list = new ArrayList<CommandModifier>();
+        this.modifier_list.clear();
+    }
 
     public static CommandType parseString(String command){
 
